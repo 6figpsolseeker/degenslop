@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="relative mt-24 border-t-4 border-double border-slop-gold bg-slop-ink/85">
+    <footer className="relative mt-24 border-t-4 border-double border-slop-gold bg-slop-ink/55 backdrop-blur-sm">
       {/* tape */}
       <span className="tape" style={{ top: -12, left: "30%", transform: "rotate(4deg)" }} />
       <span className="tape" style={{ top: -12, right: "10%", transform: "rotate(-7deg)", width: 60 }} />

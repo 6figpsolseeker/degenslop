@@ -2,7 +2,7 @@ import { WalletButton } from "./WalletButton";
 
 export function Header() {
   return (
-    <header className="relative border-b-4 border-double border-slop-gold bg-slop-ink/80 backdrop-blur sticky top-0 z-30">
+    <header className="relative border-b-4 border-double border-slop-gold bg-slop-ink/45 backdrop-blur-sm sticky top-0 z-30">
       {/* tape strips */}
       <span className="tape" style={{ top: -10, left: "8%", transform: "rotate(-6deg)" }} />
       <span className="tape" style={{ top: -10, right: "12%", transform: "rotate(8deg)", width: 60 }} />

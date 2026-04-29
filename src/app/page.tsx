@@ -17,7 +17,7 @@ export default function Home() {
               SLOP DETECTED
             </div>
 
-            <h1 className="font-bangers text-6xl sm:text-8xl leading-none tracking-wider text-slop-gold drop-shadow-[4px_4px_0_#b91d1d]">
+            <h1 className="legible font-bangers text-6xl sm:text-8xl leading-none tracking-wider text-slop-gold drop-shadow-[4px_4px_0_#b91d1d]">
               <span className="inline-block -rotate-2">SOLANA</span>{" "}
               <span className="inline-block rotate-1 text-slop-cream">RUGS</span>
               <br />
@@ -25,7 +25,7 @@ export default function Home() {
               <span className="scribble inline-block rotate-2 text-slop-gold">SLOPPED.</span>
             </h1>
 
-            <p className="mt-10 max-w-2xl font-marker text-xl text-slop-cream leading-snug -rotate-1">
+            <p className="legible-soft mt-10 max-w-2xl font-marker text-xl text-slop-cream leading-snug -rotate-1">
               <span className="text-slop-gold">DegenSlop</span> = an open-source
               wall-of-shame for Solana coins drained by{" "}
               <span className="text-slop-crimson">insiders</span>,{" "}
@@ -71,10 +71,10 @@ export default function Home() {
         <section id="registry" className="relative mx-auto max-w-6xl px-4 py-20">
           <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
             <div>
-              <h2 className="font-bangers text-5xl sm:text-6xl text-slop-gold tracking-wider drop-shadow-[3px_3px_0_#b91d1d]">
+              <h2 className="legible font-bangers text-5xl sm:text-6xl text-slop-gold tracking-wider drop-shadow-[3px_3px_0_#b91d1d]">
                 <span className="scribble">THE SLOP PILE</span>
               </h2>
-              <p className="font-marker text-lg text-slop-copper mt-3 -rotate-1">
+              <p className="legible-soft font-marker text-lg text-slop-cream mt-3 -rotate-1">
                 every token below = certified slop. receipts attached.
               </p>
             </div>
@@ -95,10 +95,10 @@ export default function Home() {
           id="submit"
           className="relative mx-auto max-w-6xl px-4 py-20 border-t-4 border-double border-slop-gold"
         >
-          <h2 className="font-bangers text-5xl sm:text-6xl text-slop-ember tracking-wider drop-shadow-[3px_3px_0_#b91d1d]">
+          <h2 className="legible font-bangers text-5xl sm:text-6xl text-slop-ember tracking-wider drop-shadow-[3px_3px_0_#b91d1d]">
             <span className="scribble scribble-yellow">FOUND A RUG?</span>
           </h2>
-          <p className="mt-6 font-marker text-lg text-slop-cream max-w-2xl leading-snug -rotate-1">
+          <p className="legible-soft mt-6 font-marker text-lg text-slop-cream max-w-2xl leading-snug -rotate-1">
             crack open a github issue. drop the contract address. paste the
             evidence (solscan, birdeye, screenshot of the dev's discord lies,
             whatever). we'll throw it on the pile.
