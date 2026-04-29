@@ -26,12 +26,12 @@ export default function Home() {
             </h1>
 
             <p className="legible-soft mt-10 max-w-2xl font-marker text-xl text-slop-cream leading-snug -rotate-1">
-              <span className="text-slop-gold">DegenSlop</span> = an open-source
-              wall-of-shame for Solana coins drained by{" "}
+              <span className="text-slop-gold">NIGSLOP</span> = an open-source
+              wall-of-shame for NIGSLOP tokens drained by{" "}
               <span className="text-slop-crimson">insiders</span>,{" "}
               <span className="text-slop-ember">snipers</span>, and{" "}
               <span className="text-slop-gold underline decoration-wavy decoration-slop-crimson">
-                malicious devs
+                NIGGER devs
               </span>
               . check before you ape, anon.
             </p>
@@ -41,7 +41,7 @@ export default function Home() {
                 href="#registry"
                 className="px-6 py-3 bg-slop-gold text-slop-ink font-bangers text-xl tracking-wider border-4 border-slop-ink shadow-[5px_5px_0_#b91d1d] -rotate-2 hover:rotate-0 transition-transform"
               >
-                SEE THE SLOP →
+                SEE THE NIGSLOP →
               </a>
               <a
                 href="#submit"
