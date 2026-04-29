@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html,
 body {
-  background: #ffffff;
-  color: #000000;
+  background: #0a0604;
+  color: #fbe8b5;
   min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-/* Fixed background image with semi-white overlay for legibility */
+/* Fixed background image — sword */
 body::before {
   content: "";
   position: fixed;
@@ -31,16 +31,19 @@ body::before {
   background-attachment: fixed;
 }
 
+/* Dark warm overlay so cream/gold text stays readable but the gold tones bleed through */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: rgba(255, 255, 255, 0.72);
+  background:
+    radial-gradient(ellipse at center, rgba(20, 10, 4, 0.45) 0%, rgba(10, 6, 4, 0.78) 70%),
+    linear-gradient(180deg, rgba(10, 6, 4, 0.55), rgba(10, 6, 4, 0.85));
   pointer-events: none;
 }
 
-/* Hand-drawn underline — black */
+/* Hand-drawn underline — gold */
 .scribble {
   position: relative;
   display: inline-block;
@@ -52,14 +55,16 @@ body::after {
   right: -4%;
   bottom: -8px;
   height: 14px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' fill='none' stroke='%23000000' stroke-width='3' stroke-linecap='round'><path d='M2 8 Q 30 2, 60 8 T 120 8 T 198 8'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' fill='none' stroke='%23ffc73a' stroke-width='3' stroke-linecap='round'><path d='M2 8 Q 30 2, 60 8 T 120 8 T 198 8'/></svg>");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   pointer-events: none;
 }
-.scribble.scribble-pink::after,
+.scribble.scribble-pink::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' fill='none' stroke='%23b91d1d' stroke-width='3' stroke-linecap='round'><path d='M2 8 Q 30 2, 60 8 T 120 8 T 198 8'/></svg>");
+}
 .scribble.scribble-yellow::after {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' fill='none' stroke='%23000000' stroke-width='3' stroke-linecap='round'><path d='M2 8 Q 30 2, 60 8 T 120 8 T 198 8'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' fill='none' stroke='%23ff6a00' stroke-width='3' stroke-linecap='round'><path d='M2 8 Q 30 2, 60 8 T 120 8 T 198 8'/></svg>");
 }
 
 /* Drippy bottom edge */
@@ -73,39 +78,40 @@ body::after {
   right: 0;
   bottom: -18px;
   height: 22px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22' preserveAspectRatio='none' fill='%23d4d4d4'><path d='M0 0 L100 0 L100 6 Q92 22 86 6 Q80 22 74 8 Q67 22 60 6 Q52 22 44 8 Q36 22 30 6 Q22 22 14 8 Q6 22 0 6 Z'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 22' preserveAspectRatio='none' fill='%231a0f06'><path d='M0 0 L100 0 L100 6 Q92 22 86 6 Q80 22 74 8 Q67 22 60 6 Q52 22 44 8 Q36 22 30 6 Q22 22 14 8 Q6 22 0 6 Z'/></svg>");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   pointer-events: none;
 }
 
-/* Washi tape strip — grey */
+/* Washi tape strip — bronze/copper */
 .tape {
   position: absolute;
-  background: rgba(180, 180, 180, 0.85);
+  background: rgba(212, 136, 31, 0.85);
   height: 22px;
   width: 80px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
   background-image:
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.18) 0 4px, transparent 4px 8px);
+    repeating-linear-gradient(45deg, rgba(255,199,58,0.25) 0 4px, transparent 4px 8px);
 }
 
-/* Rubber stamp — black */
+/* Rubber stamp — gold ink on dark */
 .stamp {
   font-family: var(--font-bangers), Impact, sans-serif;
-  border: 4px solid #000000;
-  color: #000000;
+  border: 4px solid #ffc73a;
+  color: #ffc73a;
   padding: 6px 14px 4px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.2);
+  background: rgba(255, 199, 58, 0.06);
+  box-shadow: inset 0 0 0 2px rgba(255,199,58,0.25);
+  text-shadow: 0 0 6px rgba(255, 106, 0, 0.6);
 }
 
-/* Solana wallet-adapter UI overrides — monochrome */
+/* Solana wallet-adapter UI overrides — gold-and-bronze */
 .wallet-adapter-button {
-  background-color: #d4d4d4 !important;
-  color: #000000 !important;
+  background-color: #ffc73a !important;
+  color: #0a0604 !important;
   font-family: var(--font-bangers), Impact, sans-serif !important;
   font-weight: 400 !important;
   height: 42px !important;
@@ -114,36 +120,36 @@ body::after {
   font-size: 15px !important;
   letter-spacing: 0.06em !important;
   text-transform: uppercase !important;
-  border: 3px solid #000000 !important;
-  box-shadow: 4px 4px 0 #000000 !important;
+  border: 3px solid #0a0604 !important;
+  box-shadow: 4px 4px 0 #b91d1d !important;
   transform: rotate(-2deg);
   transition: transform 0.15s ease;
 }
 
 .wallet-adapter-button:hover {
-  background-color: #a3a3a3 !important;
+  background-color: #ff6a00 !important;
   transform: rotate(-1deg) translate(-1px, -1px);
 }
 
 .wallet-adapter-modal-wrapper {
-  background-color: #ffffff !important;
-  border: 4px solid #000000 !important;
+  background-color: #1a0f06 !important;
+  border: 4px solid #ffc73a !important;
 }
 
 .wallet-adapter-modal-title {
-  color: #000000 !important;
+  color: #fbe8b5 !important;
   font-family: var(--font-bangers), Impact, sans-serif !important;
   letter-spacing: 0.04em !important;
 }
 
 .wallet-adapter-modal-list .wallet-adapter-button {
-  background-color: #ffffff !important;
-  color: #000000 !important;
+  background-color: #2d1908 !important;
+  color: #fbe8b5 !important;
   transform: none;
-  box-shadow: 3px 3px 0 #000000 !important;
-  border: 3px solid #000000 !important;
+  box-shadow: 3px 3px 0 #ffc73a !important;
+  border: 3px solid #ffc73a !important;
 }
 
 .wallet-adapter-modal-list .wallet-adapter-button:hover {
-  background-color: #f5f5f5 !important;
+  background-color: #3a2a1a !important;
 }

@@ -6,21 +6,19 @@ const config: Config = {
     extend: {
       colors: {
         slop: {
-          bg: "#0d0a08",
-          panel: "#1a1410",
-          border: "#2b1f17",
-          accent: "#a3ff12",   // slime green
-          danger: "#ff2d6f",   // hot pink rug
-          warn: "#ffd029",     // dirty yellow
-          aqua: "#21d4fd",     // electric blue
-          puke: "#9eff00",     // toxic green-yellow
-          stamp: "#ff3b3b",    // stamp red
-          muted: "#7c6f63",
-          tape: "#f9e07f",     // washi tape yellow
+          ink: "#0a0604",         // deepest black-bronze
+          bronze: "#1a0f06",      // dark bronze panel
+          forge: "#2d1908",       // forge brown
+          ember: "#ff6a00",       // fire orange
+          gold: "#ffc73a",        // bright sword-gold
+          copper: "#d4881f",      // copper accent
+          crimson: "#b91d1d",     // dragon-eye red
+          cream: "#fbe8b5",       // parchment text
+          rust: "#7a3a12",        // rust border
+          ash: "#3a2a1a",         // ash grey-brown
         },
       },
       fontFamily: {
-        // user-facing: meme stack
         bangers: ["var(--font-bangers)", "Impact", "sans-serif"],
         marker: ["var(--font-marker)", "Comic Sans MS", "cursive"],
         body: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -30,16 +28,12 @@ const config: Config = {
         "1.5": "1.5deg",
         "2.5": "2.5deg",
         "3.5": "3.5deg",
-        "neg-1.5": "-1.5deg",
-        "neg-2.5": "-2.5deg",
-        "neg-3.5": "-3.5deg",
       },
       animation: {
         "wobble": "wobble 6s ease-in-out infinite",
         "drip": "drip 3s ease-in-out infinite",
-        "stamp-spin": "stamp-spin 12s linear infinite",
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "shake": "shake 0.4s ease-in-out infinite",
+        "ember-flicker": "ember-flicker 2s ease-in-out infinite",
       },
       keyframes: {
         wobble: {
@@ -50,16 +44,9 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(4px)" },
         },
-        "stamp-spin": {
-          "0%": { transform: "rotate(-12deg)" },
-          "50%": { transform: "rotate(-8deg)" },
-          "100%": { transform: "rotate(-12deg)" },
-        },
-        shake: {
-          "0%, 100%": { transform: "translate(0, 0)" },
-          "25%": { transform: "translate(-1px, 1px)" },
-          "50%": { transform: "translate(1px, -1px)" },
-          "75%": { transform: "translate(-1px, -1px)" },
+        "ember-flicker": {
+          "0%, 100%": { opacity: "1", filter: "drop-shadow(0 0 8px #ff6a00)" },
+          "50%": { opacity: "0.85", filter: "drop-shadow(0 0 14px #ffc73a)" },
         },
       },
     },
