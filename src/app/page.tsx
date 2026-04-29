@@ -30,25 +30,25 @@ export default function Home() {
           </svg>
 
           <div className="relative mx-auto max-w-6xl px-4 py-16 sm:py-24">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-slop-stamp text-slop-bg font-bangers tracking-wider text-sm rotate-3 mb-6 border-2 border-slop-bg shadow-[3px_3px_0_#ffd029]">
-              <span className="h-2 w-2 rounded-full bg-slop-bg animate-pulse-slow" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-slop-stamp text-black font-bangers tracking-wider text-sm rotate-3 mb-6 border-2 border-black shadow-[3px_3px_0_#ffd029]">
+              <span className="h-2 w-2 rounded-full bg-black animate-pulse-slow" />
               SLOP DETECTED
             </div>
 
-            <h1 className="font-bangers text-6xl sm:text-8xl leading-none tracking-wider text-slop-warn drop-shadow-[4px_4px_0_#ff2d6f]">
+            <h1 className="font-bangers text-6xl sm:text-8xl leading-none tracking-wider text-black drop-shadow-[4px_4px_0_#ff2d6f]">
               <span className="inline-block -rotate-2">SOLANA</span>{" "}
-              <span className="inline-block rotate-1 text-slop-puke">RUGS</span>
+              <span className="inline-block rotate-1 text-black">RUGS</span>
               <br />
-              <span className="inline-block -rotate-1 text-slop-aqua">GET</span>{" "}
-              <span className="scribble inline-block rotate-2 text-slop-stamp">SLOPPED.</span>
+              <span className="inline-block -rotate-1 text-black">GET</span>{" "}
+              <span className="scribble inline-block rotate-2 text-black">SLOPPED.</span>
             </h1>
 
-            <p className="mt-10 max-w-2xl font-marker text-xl text-slop-warn/95 leading-snug -rotate-1">
-              <span className="text-slop-puke">DegenSlop</span> = an open-source
+            <p className="mt-10 max-w-2xl font-marker text-xl text-black leading-snug -rotate-1">
+              <span className="text-black">DegenSlop</span> = an open-source
               wall-of-shame for Solana coins drained by{" "}
-              <span className="text-slop-stamp">insiders</span>,{" "}
-              <span className="text-slop-aqua">snipers</span>, and{" "}
-              <span className="text-slop-warn underline decoration-wavy decoration-slop-stamp">
+              <span className="text-black">insiders</span>,{" "}
+              <span className="text-black">snipers</span>, and{" "}
+              <span className="text-black underline decoration-wavy decoration-slop-stamp">
                 malicious devs
               </span>
               . check before you ape, anon.
@@ -57,13 +57,13 @@ export default function Home() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#registry"
-                className="px-6 py-3 bg-slop-puke text-slop-bg font-bangers text-xl tracking-wider border-4 border-slop-bg shadow-[5px_5px_0_#ff2d6f] -rotate-2 hover:rotate-0 transition-transform"
+                className="px-6 py-3 bg-slop-puke text-black font-bangers text-xl tracking-wider border-4 border-black shadow-[5px_5px_0_#ff2d6f] -rotate-2 hover:rotate-0 transition-transform"
               >
                 SEE THE SLOP →
               </a>
               <a
                 href="#submit"
-                className="px-6 py-3 bg-slop-stamp text-slop-warn font-bangers text-xl tracking-wider border-4 border-slop-bg shadow-[5px_5px_0_#a3ff12] rotate-2 hover:rotate-0 transition-transform"
+                className="px-6 py-3 bg-slop-stamp text-black font-bangers text-xl tracking-wider border-4 border-black shadow-[5px_5px_0_#a3ff12] rotate-2 hover:rotate-0 transition-transform"
               >
                 ⚠ REPORT RUG
               </a>
@@ -71,7 +71,7 @@ export default function Home() {
                 href="https://github.com/6figpsolseeker/degenslop"
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-3 bg-slop-aqua text-slop-bg font-bangers text-xl tracking-wider border-4 border-slop-bg shadow-[5px_5px_0_#ffd029] -rotate-1 hover:rotate-0 transition-transform"
+                className="px-6 py-3 bg-slop-aqua text-black font-bangers text-xl tracking-wider border-4 border-black shadow-[5px_5px_0_#ffd029] -rotate-1 hover:rotate-0 transition-transform"
               >
                 OPEN SOURCE ↗
               </a>
@@ -89,14 +89,14 @@ export default function Home() {
         <section id="registry" className="relative mx-auto max-w-6xl px-4 py-20">
           <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
             <div>
-              <h2 className="font-bangers text-5xl sm:text-6xl text-slop-warn tracking-wider drop-shadow-[3px_3px_0_#ff2d6f]">
+              <h2 className="font-bangers text-5xl sm:text-6xl text-black tracking-wider drop-shadow-[3px_3px_0_#ff2d6f]">
                 <span className="scribble scribble-pink">THE SLOP PILE</span>
               </h2>
-              <p className="font-marker text-lg text-slop-aqua mt-3 -rotate-1">
+              <p className="font-marker text-lg text-black mt-3 -rotate-1">
                 every token below = certified slop. receipts attached.
               </p>
             </div>
-            <div className="font-bangers text-2xl text-slop-puke rotate-3 border-4 border-slop-puke px-3 py-1 shadow-[3px_3px_0_#ff2d6f]">
+            <div className="font-bangers text-2xl text-black rotate-3 border-4 border-black px-3 py-1 shadow-[3px_3px_0_#ff2d6f] bg-white">
               {TOKENS.length} entries
             </div>
           </div>
@@ -113,10 +113,10 @@ export default function Home() {
           id="submit"
           className="relative mx-auto max-w-6xl px-4 py-20 border-t-4 border-dashed border-slop-warn"
         >
-          <h2 className="font-bangers text-5xl sm:text-6xl text-slop-stamp tracking-wider drop-shadow-[3px_3px_0_#a3ff12]">
+          <h2 className="font-bangers text-5xl sm:text-6xl text-black tracking-wider drop-shadow-[3px_3px_0_#a3ff12]">
             <span className="scribble scribble-yellow">FOUND A RUG?</span>
           </h2>
-          <p className="mt-6 font-marker text-lg text-slop-warn max-w-2xl leading-snug -rotate-1">
+          <p className="mt-6 font-marker text-lg text-black max-w-2xl leading-snug -rotate-1">
             crack open a github issue. drop the contract address. paste the
             evidence (solscan, birdeye, screenshot of the dev's discord lies,
             whatever). we'll throw it on the pile.
@@ -125,7 +125,7 @@ export default function Home() {
             href="https://github.com/6figpsolseeker/degenslop/issues/new"
             target="_blank"
             rel="noreferrer"
-            className="inline-block mt-8 px-6 py-3 bg-slop-warn text-slop-bg font-bangers text-2xl tracking-wider border-4 border-slop-bg shadow-[5px_5px_0_#ff2d6f] -rotate-2 hover:rotate-0 transition-transform"
+            className="inline-block mt-8 px-6 py-3 bg-slop-warn text-black font-bangers text-2xl tracking-wider border-4 border-black shadow-[5px_5px_0_#ff2d6f] -rotate-2 hover:rotate-0 transition-transform"
           >
             OPEN AN ISSUE ↗
           </a>
@@ -150,7 +150,7 @@ function Stat({
 }) {
   return (
     <div
-      className={`${color} text-slop-bg p-3 border-4 border-slop-bg shadow-[4px_4px_0_#ff2d6f] ${tilt}`}
+      className={`${color} text-black p-3 border-4 border-black shadow-[4px_4px_0_#ff2d6f] ${tilt}`}
     >
       <div className="font-marker text-[12px] tracking-wide opacity-90">
         {label}
