@@ -22,7 +22,7 @@ export default function Home() {
               <span className="inline-block rotate-1 text-slop-cream">TOKEN RUGS</span>
               <br />
               <span className="inline-block -rotate-1 text-slop-ember">GET</span>{" "}
-              <span className="scribble inline-block rotate-2 text-slop-gold">CAUGHT.</span>
+              <span className="scribble inline-block rotate-2 text-slop-gold">DETECTED.</span>
             </h1>
 
             <p className="legible-soft mt-10 max-w-2xl font-marker text-xl text-slop-cream leading-snug -rotate-1">
@@ -31,7 +31,7 @@ export default function Home() {
               <span className="text-slop-crimson">insiders</span>,{" "}
               <span className="text-slop-ember">snipers</span>, and{" "}
               <span className="text-slop-gold underline decoration-wavy decoration-slop-crimson">
-                NIGGER devs
+                NIGSLOP devs
               </span>
               . check before you ape, anon.
             </p>
