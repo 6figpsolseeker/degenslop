@@ -11,7 +11,7 @@ export function Footer() {
             NIG<span className="text-slop-cream">SLOP</span>
           </div>
           <p className="mt-3 font-marker text-base text-slop-cream leading-snug">
-            community wall-of-shame for NIGGER devs , solana NIGSLOP tokens. 100% open source,
+            community wall-of-shame for NIGSLOP devs , solana NIGSLOP tokens. 100% open source,
             0% bagholder cope.
           </p>
         </div>
