@@ -75,7 +75,7 @@ export default function Home() {
                 <span className="scribble">THE SLOP PILE</span>
               </h2>
               <p className="legible-soft font-marker text-lg text-slop-cream mt-3 -rotate-1">
-                every token below = certified slop. receipts attached.
+                every token below = certified NIGSLOP. receipts attached.
               </p>
             </div>
             <div className="font-bangers text-2xl text-slop-gold rotate-3 border-4 border-slop-gold px-3 py-1 shadow-[3px_3px_0_#b91d1d] bg-slop-bronze">
