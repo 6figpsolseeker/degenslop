@@ -8,10 +8,10 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 grid gap-8 sm:grid-cols-3">
         <div className="-rotate-1">
           <div className="font-bangers text-3xl tracking-wider text-slop-gold drop-shadow-[2px_2px_0_#b91d1d]">
-            DEGEN<span className="text-slop-cream">SLOP</span>
+            NIG<span className="text-slop-cream">SLOP</span>
           </div>
           <p className="mt-3 font-marker text-base text-slop-cream leading-snug">
-            community wall-of-shame for solana rug tokens. 100% open source,
+            community wall-of-shame for NIGGER devs , solana NIGSLOP tokens. 100% open source,
             0% bagholder cope.
           </p>
         </div>
@@ -48,7 +48,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="text-slop-cream hover:text-slop-ember transition-colors"
               >
-                submit a slop ↗
+                submit a NIGSLOP ↗
               </a>
             </li>
           </ul>
