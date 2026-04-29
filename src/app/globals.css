@@ -6,9 +6,18 @@
   color-scheme: dark;
 }
 
+html {
+  min-height: 100vh;
+  background-color: #0a0604;
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 html,
 body {
-  background: #0a0604;
   color: #fbe8b5;
   min-height: 100vh;
 }
@@ -16,19 +25,7 @@ body {
 body {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   position: relative;
-}
-
-/* Fixed background image — sword */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background-image: url("/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: transparent !important;
 }
 
 /* Light vignette so sword is fully visible, text legible via shadows */
