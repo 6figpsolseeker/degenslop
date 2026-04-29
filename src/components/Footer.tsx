@@ -1,13 +1,13 @@
 export function Footer() {
   return (
-    <footer className="relative mt-24 border-t-4 border-dashed border-slop-stamp bg-white/85">
+    <footer className="relative mt-24 border-t-4 border-dashed border-black bg-white/80">
       {/* tape */}
       <span className="tape" style={{ top: -12, left: "30%", transform: "rotate(4deg)" }} />
       <span className="tape" style={{ top: -12, right: "10%", transform: "rotate(-7deg)", width: 60 }} />
 
       <div className="mx-auto max-w-6xl px-4 py-12 grid gap-8 sm:grid-cols-3">
         <div className="-rotate-1">
-          <div className="font-bangers text-3xl tracking-wider text-black drop-shadow-[2px_2px_0_#ff2d6f]">
+          <div className="font-bangers text-3xl tracking-wider text-black drop-shadow-[2px_2px_0_#000]">
             DEGEN<span className="text-black">SLOP</span>
           </div>
           <p className="mt-3 font-marker text-base text-black leading-snug">
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="-rotate-1">
-          <div className="font-bangers text-xl tracking-wider text-black mb-3 scribble scribble-pink">
+          <div className="font-bangers text-xl tracking-wider text-black mb-3 scribble">
             FINE PRINT
           </div>
           <p className="font-marker text-sm text-black leading-snug">
@@ -65,7 +65,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t-2 border-dashed border-slop-warn">
+      <div className="border-t-2 border-dashed border-black">
         <div className="mx-auto max-w-6xl px-4 py-4 font-bangers text-sm tracking-wider text-black text-center">
           built on solana ★ 100% open source ★ no token paid for inclusion ★
           stay slopless
