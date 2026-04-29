@@ -1,7 +1,28 @@
 import type { Metadata } from "next";
+import { Bangers, Permanent_Marker, Inter } from "next/font/google";
 import "./globals.css";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { WalletContextProvider } from "@/components/WalletProvider";
+
+const bangers = Bangers({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bangers",
+  display: "swap",
+});
+
+const marker = Permanent_Marker({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-marker",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "DegenSlop Detector — Solana Rug Registry",
@@ -20,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${bangers.variable} ${marker.variable} ${inter.variable}`}
+    >
       <body className="antialiased">
         <WalletContextProvider>{children}</WalletContextProvider>
       </body>

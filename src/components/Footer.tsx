@@ -1,28 +1,34 @@
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-slop-border bg-slop-bg/60">
-      <div className="mx-auto max-w-6xl px-4 py-10 grid gap-6 sm:grid-cols-3 text-sm">
-        <div>
-          <div className="font-mono font-bold text-base text-slop-accent">
-            DEGENSLOP
+    <footer className="relative mt-24 border-t-4 border-dashed border-slop-stamp bg-slop-bg/85">
+      {/* tape */}
+      <span className="tape" style={{ top: -12, left: "30%", transform: "rotate(4deg)" }} />
+      <span className="tape" style={{ top: -12, right: "10%", transform: "rotate(-7deg)", width: 60 }} />
+
+      <div className="mx-auto max-w-6xl px-4 py-12 grid gap-8 sm:grid-cols-3">
+        <div className="-rotate-1">
+          <div className="font-bangers text-3xl tracking-wider text-slop-puke drop-shadow-[2px_2px_0_#ff2d6f]">
+            DEGEN<span className="text-slop-warn">SLOP</span>
           </div>
-          <p className="mt-2 text-slop-muted text-xs leading-relaxed">
-            A community-maintained registry of Solana rug tokens. 100% open source.
+          <p className="mt-3 font-marker text-base text-slop-warn/90 leading-snug">
+            community wall-of-shame for solana rug tokens. 100% open source,
+            0% bagholder cope.
           </p>
         </div>
-        <div>
-          <div className="font-mono text-[10px] uppercase tracking-widest text-slop-muted mb-2">
-            Open Source
+
+        <div className="rotate-1">
+          <div className="font-bangers text-xl tracking-wider text-slop-aqua mb-3 scribble">
+            OPEN SOURCE
           </div>
-          <ul className="space-y-1.5">
+          <ul className="space-y-2 font-marker text-base">
             <li>
               <a
                 href="https://github.com/6figpsolseeker/degenslop"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-slop-accent transition-colors"
+                className="text-slop-warn hover:text-slop-puke transition-colors"
               >
-                GitHub repository ↗
+                github repo ↗
               </a>
             </li>
             <li>
@@ -30,9 +36,9 @@ export function Footer() {
                 href="https://github.com/6figpsolseeker/degenslop/blob/main/LICENSE"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-slop-accent transition-colors"
+                className="text-slop-warn hover:text-slop-puke transition-colors"
               >
-                MIT License ↗
+                MIT license ↗
               </a>
             </li>
             <li>
@@ -40,26 +46,29 @@ export function Footer() {
                 href="https://github.com/6figpsolseeker/degenslop/issues/new"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-slop-accent transition-colors"
+                className="text-slop-warn hover:text-slop-puke transition-colors"
               >
-                Submit a token ↗
+                submit a slop ↗
               </a>
             </li>
           </ul>
         </div>
-        <div>
-          <div className="font-mono text-[10px] uppercase tracking-widest text-slop-muted mb-2">
-            Disclaimer
+
+        <div className="-rotate-1">
+          <div className="font-bangers text-xl tracking-wider text-slop-stamp mb-3 scribble scribble-pink">
+            FINE PRINT
           </div>
-          <p className="text-xs text-slop-muted leading-relaxed">
-            Informational only. Listings reflect community reports. DYOR. Listing
-            a token as SLOP is a community signal, not a legal accusation.
+          <p className="font-marker text-sm text-slop-warn/80 leading-snug">
+            informational only. listings = community signal, not legal accusation.
+            DYOR or get slopped. not financial advice (obviously).
           </p>
         </div>
       </div>
-      <div className="border-t border-slop-border">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-[10px] font-mono uppercase tracking-widest text-slop-muted text-center">
-          Built on Solana // Open Source // No tokens were paid for inclusion
+
+      <div className="border-t-2 border-dashed border-slop-warn">
+        <div className="mx-auto max-w-6xl px-4 py-4 font-bangers text-sm tracking-wider text-slop-muted text-center">
+          built on solana ★ 100% open source ★ no token paid for inclusion ★
+          stay slopless
         </div>
       </div>
     </footer>
