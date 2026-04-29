@@ -1,5 +1,3 @@
-import { WalletButton } from "./WalletButton";
-
 export function Header() {
   return (
     <header className="relative border-b-4 border-double border-slop-gold bg-slop-ink/45 backdrop-blur-sm sticky top-0 z-30">
@@ -41,8 +39,6 @@ export function Header() {
             GITHUB
           </a>
         </nav>
-
-        <WalletButton />
       </div>
     </header>
   );

@@ -2,7 +2,7 @@
 
 A community-maintained, open-source registry of Solana tokens flagged as rugs — coins drained by insiders, snipers, or malicious devs.
 
-Built with Next.js 14, TailwindCSS, and the Solana wallet adapter (Phantom + others).
+Built with Next.js 14 and TailwindCSS.
 
 ## Why
 
@@ -13,7 +13,6 @@ Solana memecoin culture moves fast. Rugs move faster. DegenSlop is a public list
 - **Next.js 14** (App Router)
 - **TypeScript**
 - **TailwindCSS**
-- **@solana/wallet-adapter** (Phantom, Solflare, etc.)
 
 ## Run locally
 
