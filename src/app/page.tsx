@@ -1,9 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TokenCard } from "@/components/TokenCard";
 import { TOKENS } from "@/data/tokens";
 
 export default function Home() {
+  const [page, setPage] = useState(0);
+  const PAGE_SIZE = 9;
+  const pageCount = Math.ceil(TOKENS.length / PAGE_SIZE);
+  const currentPageTokens = TOKENS.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -84,10 +92,36 @@ export default function Home() {
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 pt-2">
-            {TOKENS.map((t) => (
+            {currentPageTokens.map((t) => (
               <TokenCard key={t.ca} token={t} />
             ))}
           </div>
+
+          {pageCount > 1 && (
+            <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <button
+                type="button"
+                onClick={() => setPage((currentPage) => Math.max(currentPage - 1, 0))}
+                disabled={page === 0}
+                className="inline-flex items-center justify-center rounded border-4 border-slop-ink bg-slop-gold px-6 py-3 text-slop-ink font-bangers text-lg tracking-wider shadow-[5px_5px_0_#b91d1d] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slop-ember transition-colors"
+              >
+                ← Previous
+              </button>
+
+              <div className="font-bangers text-lg text-slop-cream">
+                Page {page + 1} of {pageCount}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setPage((currentPage) => Math.min(currentPage + 1, pageCount - 1))}
+                disabled={page === pageCount - 1}
+                className="inline-flex items-center justify-center rounded border-4 border-slop-ink bg-slop-crimson px-6 py-3 text-slop-cream tracking-wider shadow-[5px_5px_0_#ff6a00] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slop-gold transition-colors"
+              >
+                Next →
+              </button>
+            </div>
+          )}
         </section>
 
         {/* Submit */}
