@@ -100,8 +100,8 @@ export default function Home() {
           </h2>
           <p className="legible-soft mt-6 font-marker text-lg text-slop-cream max-w-2xl leading-snug -rotate-1">
             crack open a github issue. drop the contract address. paste the
-            evidence (solscan, birdeye, screenshot of the dev's discord lies,
-            whatever). we'll throw it on the pile.
+            evidence (solscan, birdeye, screenshot of the devs discord lies,
+            whatever). we will throw it on the pile.
           </p>
           <a
             href="https://github.com/6figpsolseeker/degenslop/issues/new"

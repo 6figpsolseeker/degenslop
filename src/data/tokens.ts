@@ -65,4 +65,20 @@ export const TOKENS: SlopToken[] = [
     flaggedAt: "2026-04-29",
     source: "Community submission",
   },
+  {
+    ca: "2XRYkcAauSm5A5dvidmMw1BYzJWpYN6pZW4y7fRupump",
+    ticker: "SLOP-008",
+    name: "Slop Pile Entry",
+    reason: "Added to the slop pile from user-submitted token address.",
+    flaggedAt: "2026-04-30",
+    source: "Community submission",
+  },
+  {
+    ca: "95CULwyKQ88UB7qLd35SE3teqr4YDJRTLAxPVgfpump",
+    ticker: "SLOP-009",
+    name: "Slop Pile Entry",
+    reason: "Added to the slop pile from user-submitted token address.",
+    flaggedAt: "2026-04-30",
+    source: "Community submission",
+  },
 ];
