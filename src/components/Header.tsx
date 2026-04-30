@@ -7,12 +7,6 @@ export function Header() {
 
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-4 flex-wrap">
         <a href="/" className="flex items-center gap-3 group">
-          <div className="relative">
-            <div className="h-12 w-12 grid place-items-center bg-slop-gold text-slop-ink font-bangers text-3xl border-4 border-slop-ink shadow-[3px_3px_0_#b91d1d] -rotate-6 group-hover:rotate-0 transition-transform">
-              D
-            </div>
-            <span className="absolute -top-2 -right-2 text-slop-ember font-bangers text-xs rotate-12 animate-ember-flicker">★</span>
-          </div>
           <div>
             <div className="font-bangers text-2xl sm:text-3xl text-slop-gold leading-none tracking-wider drop-shadow-[2px_2px_0_#b91d1d]">
               NIG<span className="text-slop-cream">SLOP</span>
