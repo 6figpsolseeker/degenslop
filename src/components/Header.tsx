@@ -9,7 +9,7 @@ export function Header() {
         <a href="/" className="flex items-center gap-3 group">
           <div>
             <div className="font-bangers text-2xl sm:text-3xl text-slop-gold leading-none tracking-wider drop-shadow-[2px_2px_0_#b91d1d]">
-              NIG<span className="text-slop-cream">SLOP</span>
+              #NIG<span className="text-slop-cream">SLOP</span>
             </div>
             <div className="font-marker text-[11px] text-slop-copper mt-1 -rotate-1">
               detector ~ v0.1
