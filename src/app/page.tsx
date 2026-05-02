@@ -19,19 +19,14 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative overflow-hidden border-b-4 border-double border-white bg-black">
-          <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
+          <div className="relative mx-auto max-w-6xl px-4 pt-8 pb-32 sm:pt-10">
             <h1 className="font-sans text-6xl sm:text-7xl leading-tight tracking-normal text-white font-bold">
               NIGSLOP<br />
               TOKEN RUGS<br />
               DETECTED.
             </h1>
 
-            <p className="mt-8 max-w-2xl font-sans text-lg text-white leading-relaxed">
-              An open-source registry for NIGSLOP tokens drained by insiders, snipers, and NIGSLOP devs. 
-              Check before you ape, anon.
-            </p>
-
-            <div className="mt-12 flex flex-wrap gap-4">
+            <div className="mt-24 flex flex-wrap gap-4">
               <a
                 href="#registry"
                 className="px-6 py-3 bg-white text-black font-semibold text-base tracking-wide border border-white hover:bg-gray-100 transition-colors"
@@ -54,7 +49,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-8">
+            <div className="mt-14 flex flex-wrap gap-8">
               <div>
                 <div className="text-4xl font-bold text-white">{TOKENS.length.toString().padStart(3, "0")}</div>
                 <div className="text-sm text-gray-300 mt-2">FLAGGED</div>
@@ -66,6 +61,35 @@ export default function Home() {
               <div>
                 <div className="text-4xl font-bold text-white">MIT</div>
                 <div className="text-sm text-gray-300 mt-2">LICENSE</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Definition cutout */}
+        <section className="relative bg-black px-4 py-24">
+          <div className="mx-auto max-w-6xl rounded-[40px] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-sm">
+            <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+              <div className="space-y-6">
+                <h2 className="text-5xl sm:text-6xl font-serif text-white font-semibold tracking-tight">
+                  NIGSLOP
+                </h2>
+                <p className="text-lg text-gray-400 italic">/noun/</p>
+                <p className="text-xl sm:text-2xl text-white leading-relaxed">
+                  A term used to describe crypto KOLs, coins, or projects built on hype,
+                  narratives, or fake empty promises rather than genuine value.
+                </p>
+                <p className="text-base text-gray-400 italic">
+                  Example: The chart looked exciting, but the research exposed it as pure NIGSLOP.
+                </p>
+              </div>
+
+              <div className="rounded-[32px] border border-white/15 overflow-hidden bg-black min-h-[360px]">
+                <img
+                  src="/nigslop-definition.png"
+                  alt="Nigslop definition"
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
           </div>
