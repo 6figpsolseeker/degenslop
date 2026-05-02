@@ -87,11 +87,9 @@ export default function Home() {
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 pt-2">
-            {currentPageTokens.map((t) => (
-              <TokenCard key={t.ca} token={t} />
-            ))}
-          </div>
-
+              {currentPageTokens.map((t) => (
+                <TokenCard key={t.ca} token={t} />
+              ))}
             </div>
 
             {pageCount > 1 && (
