@@ -9,22 +9,7 @@
 html {
   min-height: 100vh;
   background-color: #000000;
-  background-image: url("/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  opacity: 1;
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  pointer-events: none;
-  z-index: 1;
+  background-image: none;
 }
 
 html,
@@ -39,14 +24,13 @@ body {
   background: transparent !important;
 }
 
-/* Light vignette so sword is fully visible, text legible */
+/* Light vignette so text is legible */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
-  background:
-    radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: transparent;
   pointer-events: none;
 }
 
