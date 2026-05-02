@@ -38,75 +38,63 @@ export function TokenCard({ token }: { token: SlopToken }) {
 
   return (
     <article
-      className={`relative bg-slop-bronze border-4 border-slop-gold shadow-[6px_6px_0_#b91d1d] p-5 ${tilt} hover:rotate-0 transition-transform group`}
+      className="relative bg-black border-2 border-white p-6 hover:border-gray-400 transition-colors"
     >
-      {/* washi tape on top */}
-      <span className="tape" style={{ top: -12, left: "20%", transform: "rotate(-8deg)" }} />
-
-      {/* rubber stamp overlay */}
-      <div
-        className="absolute top-3 right-3 stamp text-xl pointer-events-none opacity-90 group-hover:opacity-100 -rotate-12"
-        aria-hidden
-      >
-        {stampWord}
-      </div>
-
-      <div className="flex items-start justify-between gap-3 pr-20">
-        <div className="min-w-0">
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="font-bangers text-2xl text-slop-gold tracking-wide drop-shadow-[1px_1px_0_#b91d1d]">
+            <span className="font-sans text-xl text-white font-bold tracking-normal">
               {token.ticker ?? "UNKNOWN"}
             </span>
-            <span className="px-2 py-0.5 text-[11px] font-bangers tracking-wider bg-slop-crimson text-slop-cream border-2 border-slop-gold rotate-3">
+            <span className="px-2 py-1 text-xs font-semibold tracking-wider bg-white text-black">
               SLOP
             </span>
             {isPump && (
-              <span className="px-2 py-0.5 text-[10px] font-bangers tracking-wider bg-slop-ember text-slop-ink border-2 border-slop-ink -rotate-3">
+              <span className="px-2 py-1 text-xs font-semibold tracking-wider bg-white text-black">
                 pump.fun
               </span>
             )}
           </div>
           {token.name && (
-            <div className="font-marker text-sm text-slop-copper mt-1 truncate -rotate-1">
+            <div className="font-sans text-sm text-gray-300 mt-2 truncate">
               {token.name}
             </div>
           )}
         </div>
+        <time className="font-sans text-xs text-gray-400 shrink-0">
+          {token.flaggedAt}
+        </time>
       </div>
-
-      <time className="absolute bottom-3 right-3 font-marker text-[10px] text-slop-copper/70 -rotate-3">
-        {token.flaggedAt}
-      </time>
 
       <button
         onClick={handleCopy}
         title="Click to copy full CA"
-        className="mt-4 w-full text-left font-mono text-xs bg-slop-ink border-2 border-dashed border-slop-copper px-3 py-2.5 flex items-center justify-between gap-2 hover:border-slop-gold transition-colors text-slop-cream"
+        className="mt-4 w-full text-left font-mono text-sm bg-white text-black px-3 py-2 border border-white hover:bg-gray-200 transition-colors flex items-center justify-between gap-2"
       >
         <span className="truncate">{shortenCA(token.ca, 10, 10)}</span>
         <span
-          className={`text-[10px] font-bangers tracking-wider shrink-0 ${
-            copied ? "text-slop-ember" : "text-slop-gold"
+          className={`text-xs font-semibold shrink-0 ${
+            copied ? "text-green-600" : "text-black"
           }`}
         >
-          {copied ? "COPIED!" : "COPY"}
+          {copied ? "✓" : "COPY"}
         </span>
       </button>
 
-      <p className="mt-3 font-marker text-base leading-snug text-slop-cream/95">
+      <p className="mt-4 font-sans text-base leading-relaxed text-white">
         &ldquo;{token.reason}&rdquo;
       </p>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <ExternalLink href={solscanUrl(token.ca)} label="solscan" tilt="-rotate-2" />
-        <ExternalLink href={birdeyeUrl(token.ca)} label="birdeye" tilt="rotate-1" />
-        <ExternalLink href={dexscreenerUrl(token.ca)} label="dex" tilt="-rotate-1" />
-        {isPump && <ExternalLink href={pumpFunUrl(token.ca)} label="pump" tilt="rotate-2" />}
+        <ExternalLink href={solscanUrl(token.ca)} label="Solscan" />
+        <ExternalLink href={birdeyeUrl(token.ca)} label="Birdeye" />
+        <ExternalLink href={dexscreenerUrl(token.ca)} label="Dex" />
+        {isPump && <ExternalLink href={pumpFunUrl(token.ca)} label="Pump.fun" />}
       </div>
 
       {token.source && (
-        <div className="mt-3 font-marker text-[11px] text-slop-copper/70 italic">
-          ~ src: {token.source}
+        <div className="mt-3 font-sans text-xs text-gray-400 italic">
+          Source: {token.source}
         </div>
       )}
     </article>
@@ -116,18 +104,16 @@ export function TokenCard({ token }: { token: SlopToken }) {
 function ExternalLink({
   href,
   label,
-  tilt,
 }: {
   href: string;
   label: string;
-  tilt: string;
 }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noreferrer"
-      className={`px-2.5 py-1 font-bangers text-sm tracking-wider bg-slop-forge border-2 border-slop-gold text-slop-gold ${tilt} hover:rotate-0 hover:bg-slop-gold hover:text-slop-ink transition-all inline-block shadow-[2px_2px_0_#b91d1d]`}
+      className="px-3 py-1.5 font-sans text-xs tracking-wider bg-white text-black border border-white hover:bg-gray-200 transition-colors inline-block"
     >
       {label} ↗
     </a>

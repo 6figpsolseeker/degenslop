@@ -1,34 +1,29 @@
 export function Footer() {
   return (
-    <footer className="relative mt-24 border-t-4 border-double border-slop-gold bg-slop-ink/55 backdrop-blur-sm">
-      {/* tape */}
-      <span className="tape" style={{ top: -12, left: "30%", transform: "rotate(4deg)" }} />
-      <span className="tape" style={{ top: -12, right: "10%", transform: "rotate(-7deg)", width: 60 }} />
-
+    <footer className="relative mt-24 border-t border-white bg-black">
       <div className="mx-auto max-w-6xl px-4 py-12 grid gap-8 sm:grid-cols-3">
-        <div className="-rotate-1">
-          <div className="font-bangers text-3xl tracking-wider text-slop-gold drop-shadow-[2px_2px_0_#b91d1d]">
-            NIG<span className="text-slop-cream">SLOP</span>
+        <div>
+          <div className="font-sans text-3xl tracking-normal text-white font-bold">
+            NIGSLOP
           </div>
-          <p className="mt-3 font-marker text-base text-slop-cream leading-snug">
-            community wall-of-shame for NIGSLOP devs , solana NIGSLOP tokens. 100% open source,
-            0% bagholder cope.
+          <p className="mt-3 font-sans text-base text-white leading-relaxed">
+            Community wall-of-shame for NIGSLOP devs and Solana NIGSLOP tokens. 100% open source, 0% bagholder cope.
           </p>
         </div>
 
-        <div className="rotate-1">
-          <div className="font-bangers text-xl tracking-wider text-slop-gold mb-3 scribble">
+        <div>
+          <div className="font-sans text-xl tracking-normal text-white font-bold mb-3">
             OPEN SOURCE
           </div>
-          <ul className="space-y-2 font-marker text-base">
+          <ul className="space-y-2 font-sans text-base">
             <li>
               <a
                 href="https://github.com/6figpsolseeker/degenslop"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slop-cream hover:text-slop-ember transition-colors"
+                className="text-white hover:text-gray-300 transition-colors"
               >
-                github repo ↗
+                GitHub repo ↗
               </a>
             </li>
             <li>
@@ -36,7 +31,7 @@ export function Footer() {
                 href="https://github.com/6figpsolseeker/degenslop/blob/main/LICENSE"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slop-cream hover:text-slop-ember transition-colors"
+                className="text-white hover:text-gray-300 transition-colors"
               >
                 MIT license ↗
               </a>
@@ -46,7 +41,7 @@ export function Footer() {
                 href="https://github.com/6figpsolseeker/degenslop/issues/new"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slop-cream hover:text-slop-ember transition-colors"
+                className="text-white hover:text-gray-300 transition-colors"
               >
                 submit a NIGSLOP ↗
               </a>
@@ -54,21 +49,19 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="-rotate-1">
-          <div className="font-bangers text-xl tracking-wider text-slop-crimson mb-3 scribble scribble-pink">
+        <div>
+          <div className="font-sans text-xl tracking-normal text-white font-bold mb-3">
             FINE PRINT
           </div>
-          <p className="font-marker text-sm text-slop-cream/85 leading-snug">
-            informational only. listings = community signal, not legal accusation.
-            DYOR or get slopped. not financial advice (obviously).
+          <p className="font-sans text-sm text-gray-300 leading-relaxed">
+            Informational only. Listings = community signal, not legal accusation. DYOR or get slopped. Not financial advice.
           </p>
         </div>
       </div>
 
-      <div className="border-t-2 border-dashed border-slop-copper">
-        <div className="mx-auto max-w-6xl px-4 py-4 font-bangers text-sm tracking-wider text-slop-gold text-center">
-          built on solana ★ 100% open source ★ no token paid for inclusion ★
-          stay slopless
+      <div className="border-t border-white">
+        <div className="mx-auto max-w-6xl px-4 py-4 font-sans text-sm tracking-normal text-white text-center">
+          Built on Solana ★ 100% open source ★ No token paid for inclusion ★ Stay slopless
         </div>
       </div>
     </footer>

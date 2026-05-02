@@ -72,17 +72,17 @@ export default function Home() {
         </section>
 
         {/* Registry */}
-        <section id="registry" className="relative mx-auto max-w-6xl px-4 py-20">
-          <div className="flex items-end justify-between mb-10 gap-4 flex-wrap">
-            <div>
-              <h2 className="legible font-bangers text-5xl sm:text-6xl text-slop-gold tracking-wider drop-shadow-[3px_3px_0_#b91d1d]">
-                <span className="scribble">THE SLOP PILE</span>
+        <section id="registry" className="relative bg-black px-4 py-20 border-t border-white border-b border-white">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-10">
+              <h2 className="font-sans text-5xl sm:text-6xl text-white font-bold tracking-normal">
+                THE SLOP PILE
               </h2>
-              <p className="legible-soft font-marker text-lg text-slop-cream mt-3 -rotate-1">
-                every token below = certified NIGSLOP. receipts attached.
+              <p className="font-sans text-lg text-white mt-3 leading-relaxed">
+                Every token below = certified NIGSLOP. Receipts attached.
               </p>
             </div>
-            <div className="font-bangers text-2xl text-slop-gold rotate-3 border-4 border-slop-gold px-3 py-1 shadow-[3px_3px_0_#b91d1d] bg-slop-bronze">
+            <div className="font-sans text-lg text-white font-semibold">
               {TOKENS.length} entries
             </div>
           </div>
@@ -99,12 +99,12 @@ export default function Home() {
                 type="button"
                 onClick={() => setPage((currentPage) => Math.max(currentPage - 1, 0))}
                 disabled={page === 0}
-                className="inline-flex items-center justify-center rounded border-4 border-slop-ink bg-slop-gold px-6 py-3 text-slop-ink font-bangers text-lg tracking-wider shadow-[5px_5px_0_#b91d1d] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slop-ember transition-colors"
+                className="px-6 py-3 bg-white text-black font-semibold border border-white disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
               >
                 ← Previous
               </button>
 
-              <div className="font-bangers text-lg text-slop-cream">
+              <div className="font-sans text-lg text-white font-semibold">
                 Page {page + 1} of {pageCount}
               </div>
 
@@ -112,7 +112,7 @@ export default function Home() {
                 type="button"
                 onClick={() => setPage((currentPage) => Math.min(currentPage + 1, pageCount - 1))}
                 disabled={page === pageCount - 1}
-                className="inline-flex items-center justify-center rounded border-4 border-slop-ink bg-slop-crimson px-6 py-3 text-slop-cream tracking-wider shadow-[5px_5px_0_#ff6a00] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-slop-gold transition-colors"
+                className="px-6 py-3 bg-white text-black font-semibold border border-white disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
               >
                 Next →
               </button>
@@ -123,24 +123,24 @@ export default function Home() {
         {/* Submit */}
         <section
           id="submit"
-          className="relative mx-auto max-w-6xl px-4 py-20 border-t-4 border-double border-slop-gold"
+          className="relative bg-black px-4 py-20 border-t border-white"
         >
-          <h2 className="legible font-bangers text-5xl sm:text-6xl text-slop-ember tracking-wider drop-shadow-[3px_3px_0_#b91d1d]">
-            <span className="scribble scribble-yellow">FOUND A RUG?</span>
-          </h2>
-          <p className="legible-soft mt-6 font-marker text-lg text-slop-cream max-w-2xl leading-snug -rotate-1">
-            crack open a github issue. drop the contract address. paste the
-            evidence (solscan, birdeye, screenshot of the devs discord lies,
-            whatever). we will throw it on the pile.
-          </p>
-          <a
-            href="https://github.com/6figpsolseeker/degenslop/issues/new"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block mt-8 px-6 py-3 bg-slop-gold text-slop-ink font-bangers text-2xl tracking-wider border-4 border-slop-ink shadow-[5px_5px_0_#b91d1d] -rotate-2 hover:rotate-0 transition-transform"
-          >
-            OPEN AN ISSUE ↗
-          </a>
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-sans text-5xl sm:text-6xl text-white font-bold tracking-normal">
+              FOUND A RUG?
+            </h2>
+            <p className="mt-6 font-sans text-lg text-white max-w-2xl leading-relaxed">
+              Open a GitHub issue. Drop the contract address. Paste the evidence (Solscan, Birdeye, screenshot of the dev's Discord lies, whatever). We will throw it on the pile.
+            </p>
+            <a
+              href="https://github.com/6figpsolseeker/degenslop/issues/new"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block mt-8 px-6 py-3 bg-white text-black font-semibold border border-white hover:bg-gray-100 transition-colors"
+            >
+              OPEN AN ISSUE ↗
+            </a>
+          </div>
         </section>
       </main>
 
