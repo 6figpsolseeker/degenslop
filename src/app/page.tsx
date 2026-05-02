@@ -82,42 +82,44 @@ export default function Home() {
                 Every token below = certified NIGSLOP. Receipts attached.
               </p>
             </div>
-            <div className="font-sans text-lg text-white font-semibold">
+            <div className="font-sans text-lg text-white font-semibold mb-10">
               {TOKENS.length} entries
             </div>
-          </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 pt-2">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 pt-2">
             {currentPageTokens.map((t) => (
               <TokenCard key={t.ca} token={t} />
             ))}
           </div>
 
-          {pageCount > 1 && (
-            <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <button
-                type="button"
-                onClick={() => setPage((currentPage) => Math.max(currentPage - 1, 0))}
-                disabled={page === 0}
-                className="px-6 py-3 bg-white text-black font-semibold border border-white disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
-              >
-                ← Previous
-              </button>
-
-              <div className="font-sans text-lg text-white font-semibold">
-                Page {page + 1} of {pageCount}
-              </div>
-
-              <button
-                type="button"
-                onClick={() => setPage((currentPage) => Math.min(currentPage + 1, pageCount - 1))}
-                disabled={page === pageCount - 1}
-                className="px-6 py-3 bg-white text-black font-semibold border border-white disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
-              >
-                Next →
-              </button>
             </div>
-          )}
+
+            {pageCount > 1 && (
+              <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <button
+                  type="button"
+                  onClick={() => setPage((currentPage) => Math.max(currentPage - 1, 0))}
+                  disabled={page === 0}
+                  className="px-6 py-3 bg-white text-black font-semibold border border-white disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  ← Previous
+                </button>
+
+                <div className="font-sans text-lg text-white font-semibold">
+                  Page {page + 1} of {pageCount}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setPage((currentPage) => Math.min(currentPage + 1, pageCount - 1))}
+                  disabled={page === pageCount - 1}
+                  className="px-6 py-3 bg-white text-black font-semibold border border-white disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-200 transition-colors"
+                >
+                  Next →
+                </button>
+              </div>
+            )}
+          </div>
         </section>
 
         {/* Submit */}
@@ -130,7 +132,7 @@ export default function Home() {
               FOUND A RUG?
             </h2>
             <p className="mt-6 font-sans text-lg text-white max-w-2xl leading-relaxed">
-              Open a GitHub issue. Drop the contract address. Paste the evidence (Solscan, Birdeye, screenshot of the dev's Discord lies, whatever). We will throw it on the pile.
+              Open a GitHub issue. Drop the contract address. Paste the evidence (Solscan, Birdeye, screenshot of the dev&apos;s Discord lies, whatever). We will throw it on the pile.
             </p>
             <a
               href="https://github.com/6figpsolseeker/degenslop/issues/new"

@@ -10,15 +10,6 @@ import {
   pumpFunUrl,
 } from "@/lib/utils";
 
-const TILTS = ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2", "-rotate-3", "rotate-3"];
-const STAMPS = ["RUG", "DUMPED", "SLOP", "EXIT", "JEET BAIT"];
-
-function pick<T>(arr: T[], seed: string): T {
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
-  return arr[h % arr.length];
-}
-
 export function TokenCard({ token }: { token: SlopToken }) {
   const [copied, setCopied] = useState(false);
 
@@ -33,8 +24,6 @@ export function TokenCard({ token }: { token: SlopToken }) {
   }
 
   const isPump = token.ca.toLowerCase().endsWith("pump");
-  const tilt = pick(TILTS, token.ca);
-  const stampWord = pick(STAMPS, token.ca + "s");
 
   return (
     <article
