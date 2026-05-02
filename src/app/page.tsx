@@ -148,26 +148,3 @@ export default function Home() {
     </div>
   );
 }
-
-function Stat({
-  label,
-  value,
-  tilt,
-  color,
-}: {
-  label: string;
-  value: string;
-  tilt: string;
-  color: string;
-}) {
-  return (
-    <div
-      className={`${color} p-3 border-4 border-slop-ink shadow-[4px_4px_0_#b91d1d] ${tilt}`}
-    >
-      <div className="font-marker text-[12px] tracking-wide opacity-90">
-        {label}
-      </div>
-      <div className="font-bangers text-3xl tracking-wider">{value}</div>
-    </div>
-  );
-}
