@@ -86,8 +86,8 @@ export default function Home() {
 
               <div className="rounded-[32px] border border-white/15 overflow-hidden bg-black min-h-[360px]">
                 <img
-                  src="/nigslop-definition.png"
-                  alt="Nigslop definition"
+                  src="/nigslop-definition.jpg"
+                  alt="Sword image for Nigslop definition"
                   className="h-full w-full object-cover"
                 />
               </div>
