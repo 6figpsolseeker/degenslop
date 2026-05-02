@@ -18,59 +18,55 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative overflow-hidden border-b-4 border-double border-slop-gold">
-          <div className="relative mx-auto max-w-6xl px-4 py-16 sm:py-24">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-slop-crimson text-slop-cream font-bangers tracking-wider text-sm rotate-3 mb-6 border-2 border-slop-gold shadow-[3px_3px_0_#ff6a00]">
-              <span className="h-2 w-2 rounded-full bg-slop-ember animate-ember-flicker" />
-              NIGSLOP DETECTED
-            </div>
-
-            <h1 className="legible font-bangers text-6xl sm:text-8xl leading-none tracking-wider text-slop-gold drop-shadow-[4px_4px_0_#b91d1d]">
-              <span className="inline-block -rotate-2">NIGSLOP</span>{" "}
-              <span className="inline-block rotate-1 text-slop-cream">TOKEN RUGS</span>
-              <br />
-              <span className="inline-block -rotate-1 text-slop-ember">GET</span>{" "}
-              <span className="scribble inline-block rotate-2 text-slop-gold">DETECTED.</span>
+        <section className="relative overflow-hidden border-b-4 border-double border-white bg-black">
+          <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32">
+            <h1 className="font-sans text-6xl sm:text-7xl leading-tight tracking-normal text-white font-bold">
+              NIGSLOP<br />
+              TOKEN RUGS<br />
+              DETECTED.
             </h1>
 
-            <p className="legible-soft mt-10 max-w-2xl font-marker text-xl text-slop-cream leading-snug -rotate-1">
-              <span className="text-slop-gold">NIGSLOP</span> = an open-source
-              wall-of-shame for NIGSLOP tokens drained by{" "}
-              <span className="text-slop-crimson">insiders</span>,{" "}
-              <span className="text-slop-ember">snipers</span>, and{" "}
-              <span className="text-slop-gold underline decoration-wavy decoration-slop-crimson">
-                NIGSLOP devs
-              </span>
-              . check before you ape, anon.
+            <p className="mt-8 max-w-2xl font-sans text-lg text-white leading-relaxed">
+              An open-source registry for NIGSLOP tokens drained by insiders, snipers, and NIGSLOP devs. 
+              Check before you ape, anon.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-12 flex flex-wrap gap-4">
               <a
                 href="#registry"
-                className="px-6 py-3 bg-slop-gold text-slop-ink font-bangers text-xl tracking-wider border-4 border-slop-ink shadow-[5px_5px_0_#b91d1d] -rotate-2 hover:rotate-0 transition-transform"
+                className="px-6 py-3 bg-white text-black font-semibold text-base tracking-wide border border-white hover:bg-gray-100 transition-colors"
               >
                 SEE THE NIGSLOP →
               </a>
               <a
                 href="#submit"
-                className="px-6 py-3 bg-slop-crimson text-slop-cream font-bangers text-xl tracking-wider border-4 border-slop-gold shadow-[5px_5px_0_#ff6a00] rotate-2 hover:rotate-0 transition-transform"
+                className="px-6 py-3 bg-transparent text-white font-semibold text-base tracking-wide border-2 border-white hover:bg-white hover:text-black transition-colors"
               >
-                ⚔ REPORT RUG
+                REPORT RUG
               </a>
               <a
                 href="https://github.com/6figpsolseeker/degenslop"
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-3 bg-slop-forge text-slop-gold font-bangers text-xl tracking-wider border-4 border-slop-gold shadow-[5px_5px_0_#b91d1d] -rotate-1 hover:rotate-0 transition-transform"
+                className="px-6 py-3 bg-transparent text-white font-semibold text-base tracking-wide border-2 border-white hover:bg-white hover:text-black transition-colors"
               >
                 OPEN SOURCE ↗
               </a>
             </div>
 
-            <div className="mt-14 grid grid-cols-3 max-w-md gap-3">
-              <Stat label="flagged" value={TOKENS.length.toString().padStart(3, "0")} tilt="-rotate-3" color="bg-slop-gold text-slop-ink" />
-              <Stat label="chain" value="SOL" tilt="rotate-2" color="bg-slop-crimson text-slop-cream" />
-              <Stat label="lic." value="MIT" tilt="-rotate-1" color="bg-slop-forge text-slop-gold" />
+            <div className="mt-12 flex flex-wrap gap-8">
+              <div>
+                <div className="text-4xl font-bold text-white">{TOKENS.length.toString().padStart(3, "0")}</div>
+                <div className="text-sm text-gray-300 mt-2">FLAGGED</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-white">SOL</div>
+                <div className="text-sm text-gray-300 mt-2">CHAIN</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-white">MIT</div>
+                <div className="text-sm text-gray-300 mt-2">LICENSE</div>
+              </div>
             </div>
           </div>
         </section>
