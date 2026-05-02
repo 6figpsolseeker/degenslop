@@ -14,6 +14,9 @@ export function Header() {
         </a>
 
         <nav className="hidden sm:flex items-center gap-8 font-sans text-sm tracking-normal">
+          <a href="/suspected-slop" className="text-white hover:text-gray-300 transition-colors">
+            SUSPECTED SLOP
+          </a>
           <a href="#registry" className="text-white hover:text-gray-300 transition-colors">
             REGISTRY
           </a>
